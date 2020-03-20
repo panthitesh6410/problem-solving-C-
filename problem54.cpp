@@ -983,19 +983,79 @@
 
 // 25. pattern 2 :
 
-#include<iostream>
-using namespace std;
-int main()
-{
-    int r=5, c=5;
-    for(int i=1;i<=r;i++)
-    {
-        for(int j=1;j<=c;j++)
-        {
-            cout<<i<<" ";
-        }
-        cout<<endl;
-    }
-    return 0;
-}
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int initial=1;
+//     for(int i=1;i<=5;i++)
+//     {
+//         for(int j=initial;j<=5;j++)
+//         {
+//             cout<<j<<" ";
+//         }
+//         initial++;
+//         cout<<endl;
+//     }
+//     return 0;
+// }
+
+// 26. pattern 3:
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int initial=5;
+//     for(int i=1;i<=5;i++)
+//     {
+//         for(int j=initial;j>=1;j--)
+//         {
+//             cout<<j<<" ";
+//         }
+//         initial--;
+//         cout<<endl;
+//     }
+//     return 0;
+// }
+
+// 27. pattern 4:
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int value=1;
+//     for(int i=1;i<=5;i++)
+//     {
+//         for(int j=5;j>=value;j--)
+//         {
+//             cout<<j<<" ";
+//         }
+//         value++;
+//         cout<<endl;
+//     }
+//     return 0;
+// }
+
+// 28. pattern 5 :
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int value=5;
+//     for(int i=1;i<=5;i++)
+//     {
+//         for(int j=1;j<=value;j++)
+//         {
+//             cout<<i<<" ";
+//         }
+//         value--;
+//         cout<<endl;
+//     }
+//     return 0;
+// }
+
+// 29. pattern 6 :
 
