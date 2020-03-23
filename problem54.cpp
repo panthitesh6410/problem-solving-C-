@@ -1059,3 +1059,248 @@
 
 // 29. pattern 6 :
 
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int temp=5;
+//     for(int i=1;i<=5;i++)
+//     {
+//         for(int j=temp;j<=5;j++)
+//         {
+//             cout<<j<<" ";
+//         }
+//         temp--;
+//         cout<<endl;
+//     }
+//     return 0;
+// }
+
+// 30. pattern 7 :
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int temp=1;
+//     for(int i=1;i<=5;i++)
+//     {
+//         for(int j=temp;j>=1;j--)
+//             cout<<j<<" ";
+//         temp++;
+//         cout<<endl;
+//     }
+//     return 0;
+// }
+
+// 31. pattern 8 :
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int temp=5;
+//     for(int i=1;i<=5;i++)
+//     {
+//         for(int j=5;j>=temp;j--)
+//             cout<<j<<" ";
+//         temp--;
+//         cout<<endl;
+//     }
+//     return 0;
+// }
+
+// 32. pattern 9 :
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int temp=1;
+//     for(int i=5;i>=1;i--)
+//     {
+//         for(int j=1;j<=temp;j++)
+//             cout<<i<<" ";
+//         temp++;
+//         cout<<endl;
+//     } 
+//     return 0;
+// }
+
+// 33. pattern 10 :
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int temp=5;
+//     for(int i=5;i>=1;i--)
+//     {
+//         for(int j=1;j<=temp;j++)
+//             cout<<i<<" ";
+//         temp--;
+//         cout<<endl;
+//     }
+//     return 0;
+// }
+
+// 34. pattern 11 :
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int temp=5;
+//     for(int i=0;i<=5;i++)
+//     {
+//         if(i % 2 != 0)
+//         {
+//             for(int j=temp;j>=1;j--)
+//                 cout<<j<<" ";
+//         }
+//         else
+//         {
+//             for(int j=1;j<=temp;j++)
+//                 cout<<j<<" ";
+//         }
+//         temp--;
+//         cout<<endl;
+//     }
+//     return 0;
+// }
+
+// 35. pattern 12 :
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int temp=7;
+//     for(int i=1;i<=4;i++)
+//     {
+//         for(int j=1;j<=temp;j++)
+//             cout<<j<<" ";
+//         temp -= 2;
+//         cout<<endl;
+//     }
+//     return 0;
+// }
+
+// 36. pattern 13 :
+// 1
+// 0 1
+// 1 0 1
+// 0 1 0 1
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int temp=1;
+//     for(int i=1;i<=4;i++)
+//     {
+//         if(i%2 != 0)
+//         {
+//             int show = 1;
+//             for(int j=1;j<=temp;j++)
+//             {
+//                 if(j%2 != 0)
+//                 {
+//                     cout<<show<<" ";
+//                     show=0;
+//                 }
+//                 else
+//                 {
+//                     cout<<show<<" ";
+//                     show=1;
+//                 }
+//             }
+//             temp++;
+//             cout<<endl;
+//         }
+//         else{
+//             int show = 0;
+//             for(int j=1;j<=temp;j++)
+//             {
+//                 if(j%2 != 0)
+//                 {
+//                     cout<<show<<" ";
+//                     show=1;
+//                 }
+//                 else
+//                 {
+//                     cout<<show<<" ";
+//                     show=0;
+//                 }
+//             }
+//             temp++;
+//             cout<<endl;
+//         }
+//     }
+//     return 0;
+// }
+
+// 37. pattern 14 :
+// 1 3 5 7 9 
+// 3 5 7 9
+// 5 7 9
+// 7 9
+// 9
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int temp=1;
+//     for(int i=1;i<=5;i++)
+//     {
+//         for(int j=temp;j<=9;j++)
+//         {
+//             if(j%2 != 0)
+//             {
+//                 cout<<j<<" ";
+//             }
+//         }
+//         temp=temp+2;
+//         cout<<endl;
+//     }    
+//     return 0;
+// }
+
+// 38. pattern 15 :
+// 1 
+// 2 4  
+// 1 3 5
+// 2 4 6 8
+// 1 3 5 7 9
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    for(int i=1;i<=5;i++)
+    {
+        if(i%2!=0)
+        {
+            for(int j=1;j<=9;j++)
+            {
+                if(j%2!=0)
+                {
+                    cout<<j<<" ";
+                }
+            }
+        }
+        else
+        {
+            for(int j=1;j<=9;j++)
+            {
+                if(j%2==0)
+                {
+                    cout<<j<<" ";
+                }
+            }
+        }
+        cout<<endl;
+    }
+    return 0;
+}
