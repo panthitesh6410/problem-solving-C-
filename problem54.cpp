@@ -1928,5 +1928,50 @@
 //     return 0;
 // }
 
-// 60. 
+// 60.
+ 
+// take a number
+// reverse it 
+// add both above
+// reverse again
+// check if above 2 steps(reverse again and add both steps) gives same result then stop(break)
+// else 
+// add again ... 
 
+// #include<iostream>
+// using namespace std;
+
+// int reverse(int num)
+// {
+//     int reverse = 0;
+//     while(num != 0)
+//     {
+//         int d = num % 10;
+//         reverse = (reverse * 10) + d;
+//         num = num / 10;
+//     }
+//     return reverse;
+// }
+// int main()
+// {
+//     int global_num;
+//     cin>>global_num;
+//     int rev, add; 
+//     while(1)
+//     {
+//         rev = reverse(global_num);
+//         if(global_num == rev)
+//         {
+//             cout<<global_num;
+//             break;
+//         }
+//         else{
+//             add = rev + global_num;
+//             rev = reverse(add);
+//             global_num = add + rev;
+//         }
+        
+//     }
+    
+//     return 0;
+// }
