@@ -1274,33 +1274,659 @@
 // 2 4 6 8
 // 1 3 5 7 9
 
-#include<iostream>
-using namespace std;
-int main()
-{
-    for(int i=1;i<=5;i++)
-    {
-        if(i%2!=0)
-        {
-            for(int j=1;j<=9;j++)
-            {
-                if(j%2!=0)
-                {
-                    cout<<j<<" ";
-                }
-            }
-        }
-        else
-        {
-            for(int j=1;j<=9;j++)
-            {
-                if(j%2==0)
-                {
-                    cout<<j<<" ";
-                }
-            }
-        }
-        cout<<endl;
-    }
-    return 0;
-}
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     for(int i=1;i<=5;i++)
+//     {
+//         if(i%2!=0)
+//         {
+//             for(int j=1;j<=9;j++)
+//             {
+//                 if(j%2!=0)
+//                 {
+//                     cout<<j<<" ";
+//                 }
+//             }
+//         }
+//         else
+//         {
+//             for(int j=1;j<=9;j++)
+//             {
+//                 if(j%2==0)
+//                 {
+//                     cout<<j<<" ";
+//                 }
+//             }
+//         }
+//         cout<<endl;
+//     }
+//     return 0;
+// }
+
+// 39. pattern : 16
+// 55555
+// 45555
+// 34555
+// 23455
+// 12345
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int temp=5;
+//     for(int i=1;i<=5;i++)
+//     {
+//         for(int j=1;j<=5;j++)
+//         {
+//             cout<<temp<<" ";
+//         }
+//         temp--;
+//         cout<<endl;
+//     }
+//     return 0;
+// }
+
+
+// 40. pattern 17 :
+
+// 1
+// 23
+// 456
+// 78910
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int temp=1, index=1;
+//     for(int i=1;i<=4;i++)
+//     {
+//         for(int j=1;j<=index;j++)
+//         {
+//             cout<<temp<<" ";
+//             temp++;
+//         }
+//         index++;
+//         cout<<endl;
+//     }
+//     return 0;
+// }
+
+// 41. pattern 18 :
+
+// 1
+// 10
+// 101
+// 1010
+// 10101
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int temp=1;
+//     for(int i=1;i<=5;i++)
+//     {
+//         for(int j=1;j<=temp;j++)
+//         {
+//             if(j % 2 != 0)
+//             {
+//                 cout<<"1"<<" ";
+//             }
+//             else{
+//                 cout<<"0"<<" ";
+//             }
+//         }
+//         temp++;   
+//         cout<<endl;
+//     }
+//     return 0;
+// }
+
+// 42. pattern 19 :
+
+// 1
+// 2 6
+// 3 7 10
+// 4 8 11 13
+// 5 9 12 14 15
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int temp=1, value=1, val;
+//     for(int i=1;i<=5;i++)
+//     {
+//         int a = 4;
+//         for(int j=1;j<=temp;j++)
+//         {
+//             if(j==1)
+//                 cout<<value<<" ";
+//             else
+//             {
+//                 val = value + a;
+//                 cout<<val<<" ";
+//                 a--;
+//             }
+//         }
+//         temp++;
+//         cout<<endl;
+//         value++;
+//     }
+//     return 0;
+// }
+
+// 43. pattern 20 :
+
+// 1
+// 123
+// 12345
+// 1234567
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int temp=1;
+//     for(int i=1;i<=4;i++)
+//     {
+//         for(int j=1;j<=temp;j++)
+//         {
+//             cout<<j<<" ";
+//         }
+//         temp = temp+2;
+//         cout<<endl;
+//     }
+//     return 0;
+// }
+
+// 44. pattern 21 :
+
+// 12344321
+// 123**321
+// 12****21
+// 1******1
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int point=4, temp=0;
+//     for(int i=1;i<=4;i++)
+//     {
+//         int print=4;              
+//         for(int j=1;j<=8;j++)
+//         {
+            
+//             if(j<=point || j>point+temp)
+//             {
+//                 if(j>point+temp)
+//                 {
+//                     cout<<print<<" ";
+//                     print--;
+//                 }
+//                 else
+//                     cout<<j<<" ";
+//             }
+//             else{
+//                 cout<<"*"<<" ";
+//             }
+//         }
+//         cout<<endl;
+//         point--;
+//         temp = temp + 2;
+//     }
+//     return 0;
+// }
+
+// 45. pattern 20 :
+//   1
+//  234
+// 56789
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int start=3, end=3;
+//     int value=1;
+//     for(int i=1;i<=3;i++)
+//     {
+//         for(int j=1;j<=5;j++)
+//         {   
+//             if(j>=start && j<=end)
+//             {
+//                 cout<<value<<" ";
+//             }
+//             else{
+//                 cout<<" "<<" ";
+//             }
+//             value++;
+//         }
+//         start--;
+//         end++;
+//         cout<<endl;
+//     }
+//     return 0;
+// }
+
+// 46. pattern 21 :
+// 5432*
+// 543*1
+// 54*21
+// 5*321
+// *4321
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int value=1;
+//     for(int i=1;i<=5;i++)
+//     {
+//         int temp=5;
+//         for(int j=1;j<=5;j++)
+//         {
+//             if(temp==value)
+//                 cout<<"*"<<" ";
+//             else
+//                 cout<<temp<<" ";
+//             temp--;
+//         }
+//         value++;
+//         cout<<endl;
+//     }
+//     return 0;
+// }
+
+// 47. pattern 22 :
+// 11111
+// 2222
+// 333
+// 22
+// 1
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int temp=5, point=1, flag=0;
+//     for(int i=1;i<=5;i++)
+//     {
+//         if(point == 3 || flag==1)
+//         {
+//             flag=1;
+//             for(int j=1;j<=temp;j++)
+//             {
+//                 cout<<point<<" ";
+//             }
+//             point--;
+//         }
+//         else{
+//             for(int j=1;j<=temp;j++)
+//             {
+//                 cout<<point<<" ";
+//             }
+//             point++;
+//         }
+//         temp--;
+//         cout<<endl;
+        
+//     }
+//     return 0;
+// }
+
+// 48. pattern 23 :
+// 1
+// 121
+// 12321
+// 1234321
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int temp=1, value=1;
+//     for(int i=1;i<=4;i++)
+//     {
+//         int value=1;
+//         for(int j=1;j<=temp;j++)
+//         {
+//             if(j <= temp/2)
+//             {
+//                 cout<<value<<" ";
+//                 value++;
+//             }
+//             else{
+//                 cout<<value<<" ";
+//                 value--;
+//             }
+//         }
+//         cout<<endl;
+//         temp = temp + 2;
+//         value = value + 1;
+//     }
+//     return 0;
+// }
+
+// 49. pattern 24 :
+// 0                (1, 2, 5, 7, 9, 11, 12, 17, 19)
+// 90
+// 89098
+// 7890987
+// 678909876
+// 56789098765
+// 456789098654
+// 345678909876543
+// 23456789098765432
+// 1234567890987654321
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     for(int i=1;i<=10;i++)
+//     {
+//         for(int j=1;j<=;j++)       
+//     }
+//     return 0;
+// }
+
+// 50. pattern 25 :
+//      1
+//     21
+//    321
+//   4321
+//  54321
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int temp=5;
+//     for(int i=1;i<=5;i++)
+//     {
+//         int val=5;
+//         for(int j=1;j<=5;j++)
+//         {
+//             if(j<temp)
+//             {
+//                 cout<<" "<<" ";
+//             }
+//             else
+//             {
+//                 cout<<val<<" ";
+//             }
+//             val = val - 1;
+//         }
+//         temp = temp - 1;
+//         cout<<endl;
+//     }
+//     return 0;
+// }
+
+// 51.  pattern 26 :
+// 1
+// 2*2
+// 3*3*3
+// 4*4*4*4
+// 3*3*3
+// 2*2
+// 1
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int temp=1, flag=0, val=7;
+//     for(int i=1;i<=7;i++)
+//     {
+//         if(i>3)
+//         {
+//             for(int j=1;j<=temp;j++)
+//             {
+//                 if(i > 3)
+//                 {
+//                     cout<<val;
+//                 }
+//                 else    
+//                     cout<<i;
+//                 if(j<temp)
+//                     cout<<"*";
+//             }
+//             val = val - 1;
+//             cout<<endl;
+//             temp=temp-1;
+//         }
+//         else
+//         {
+//             for(int j=1;j<=temp;j++)
+//             {    
+//                 cout<<i;
+//                 if(j<temp)
+//                     cout<<"*";
+//             }
+//             val = val - 1;
+//             cout<<endl;
+//             temp=temp+1;
+//         }
+//     }
+//     return 0;
+// }
+
+// 52.  pattern 27 :
+//      1
+//     2 3
+//    4 5 6
+//   7 8 9 10
+// 11 12 13 14 15
+
+// #include<iostream> 
+// using namespace std;
+// int main()
+// {
+//     int temp=1, index=1, spaces=4;
+//     for(int i=1;i<=5;i++)
+//     {
+//         for(int j=1;j<=index;j++)
+//         {
+//             for(int k=1;k<=spaces;k++)
+//                 cout<<" ";
+//             cout<<temp<<" ";
+//             temp++;
+//         }
+//         cout<<endl;
+//         index++;
+//         spaces--;
+//     }
+//     return 0;
+// }
+
+// 53. pattern 28 :
+// 11111
+// 0000
+// 111
+// 00
+// 1
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int temp=5;
+//     for(int i=1;i<=5;i++)
+//     {
+//         if(i%2 == 0)
+//         {
+//             for(int j=1;j<=temp;j++)
+//             {
+//                 cout<<"0"<<" ";
+//             }
+//         }
+//         else{
+//             for(int j=1;j<=temp;j++)
+//             {
+//                 cout<<"1"<<" ";
+//             }
+//         }
+//         temp--;
+//         cout<<endl;
+//     }
+//     return 0;
+// }
+
+// 54. pattern 29 :
+// 1 2 3 4 5
+// 6 7 8 9
+// 10 11 12 
+// 13 14
+// 15
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int temp=5, value=1;
+//     for(int i=1;i<=5;i++)
+//     {
+//         for(int j=1;j<=temp;j++)
+//         {
+//             cout<<value<<" ";
+//             value++;
+//         }
+//         cout<<endl;
+//         temp--;
+//     }
+//     return 0;
+// }
+
+// 55. pattern 30 :
+// 1
+// 23
+// 345
+// 4567
+// 56789
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int temp=1;
+//     for(int i=1;i<=5;i++)
+//     {
+//         int value=i;
+//         for(int j=1;j<=temp;j++)
+//         {
+//             cout<<value<<" ";
+//             value++;
+//         }
+//         cout<<endl;
+//         temp++;
+//     }
+//     return 0;
+// }
+
+// 56. pattern 31 :
+//       5
+//      5 4
+//     5 4 3
+//    5 4 3 2
+//   5 4 3 2 1
+
+// #include<iostream>
+// using namespace  std;
+// int main()
+// {
+//     int temp=1, spaces=5;
+//     for(int i=1;i<=5;i++)
+//     {
+//         int value=5;
+//         for(int j=1;j<=temp;j++)
+//         {
+//             for(int k=1;k<=spaces;k++)
+//                 cout<<" ";
+//             cout<<value;
+//             value--;
+//         }
+//         spaces--;
+//         cout<<endl;
+//         temp++;
+//     }
+//     return 0;
+// }
+
+// 57. pattern 32 :
+// 1
+// 232
+// 34543
+// 4567654
+// 567898765
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int temp=1, spaces=5;
+//     for(int i=1;i<=5;i++)
+//     {
+//         for(int j=i;j<=temp;j++)
+//         {
+//             cout<<j<<" ";
+//         }
+//         spaces--;
+//         cout<<endl;
+//         temp = temp + 2;
+//     }
+//     return 0;
+// }
+
+// 58. pattern : 33 
+// 1
+// 2 3
+// 4 5 6
+// 7 8 9 10
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int temp = 1, value = 1;
+//     for(int i=1;i<=4;i++)
+//     {
+//         for(int j=1;j<=temp;j++)
+//         {
+//             cout<<value<<" ";
+//             value++;
+//         }
+//         cout<<endl;
+//         temp++;
+//     }
+//     return 0;
+// }
+
+// 59.
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int n;
+//     cin>>n;
+//     for(int i=2;i<=n;i++)
+//     {
+//         int sum = 0;
+//         for(int j=1;j<=i;j++)
+//         {
+//             sum = sum + j;
+//         }
+//         cout<<sum<<" ";
+//     }
+//     return 0;
+// }
+
+// 60. 
+
