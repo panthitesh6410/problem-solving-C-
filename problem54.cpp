@@ -1942,6 +1942,7 @@
 // using namespace std;
 
 // int reverse(int num)
+
 // {
 //     int reverse = 0;
 //     while(num != 0)
