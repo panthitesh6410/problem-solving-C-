@@ -39,7 +39,7 @@ int main()
         {
             for(int j=i;j>=0;j--)
             {
-                if(G[i]>G[j])
+                if(G[i]>O[j])
                     count++;
             }
             // 20, 30, 50 - i
