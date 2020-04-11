@@ -1,4 +1,5 @@
-// GeeksforGeeks :  linked list of strings forms a palindrome 
+// GeeksforGeeks :  
+// linked list of strings forms a palindrome 
 
 #include<iostream>
 using namespace std;
@@ -23,24 +24,11 @@ void insert(string s)
         start = last = newnode;
     else
     {
-        temp = start;
-        while(temp != last)
-            temp = temp->right;
-        temp->right = newnode;
-        newnode->left = temp;
+        last->right = newnode;
+        newnode->left = last;
         last = newnode;
     }
 }
-
-// void display()
-// {
-//     node *temp=start;
-//     while(temp != NULL)
-//     {
-//         cout<<temp->info<<" ";
-//         temp = temp->right;
-//     }
-// }
 
 int check_palindrome()
 {
