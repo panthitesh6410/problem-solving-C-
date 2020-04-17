@@ -3,7 +3,7 @@
 //   1 0 0      1 1 1       1 1 1
 //   0 0 1  ->  1 1 1  ->   1 1 1
 //   0 0 0      0 0 1       1 1 1
-// (INITIAL)     (1)         (2)        Result = 2 (count)
+// (INITIAL)     (1)         (2)         Result = 2 (count)
 
 #include<vector>
 #include<iostream>
