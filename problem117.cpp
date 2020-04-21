@@ -2,8 +2,7 @@
 // 1, 2, 1, 3, 2, 5, 3, 7, 5, 11, 8, ...
 // odd terms - fibonacci terms
 // even terms - prime numbers
-// find Nth term
-
+// find nth term
 #include<iostream>
 using namespace std;
 
