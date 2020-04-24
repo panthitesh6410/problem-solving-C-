@@ -1,4 +1,4 @@
-// Google KickStart Round B (2018) : Problem 1 -
+// Google KickStart Round B (2018) : Problem 1 :
 
 #include<iostream>
 using namespace std;

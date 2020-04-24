@@ -1,4 +1,4 @@
-// Google Kick-Start (2018) Round-A : Problem-1
+// Google Kick-Start (2018) Round-A : Problem-1 :
 
 #include<iostream>
 using namespace std;
