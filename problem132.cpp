@@ -40,7 +40,7 @@ int main()
         else
             flag[v[i]] = flag[v[i+1]] = 1;
     }
-// remaining :
+// for remaining elements with 0 flag :
     for(int i=0;i<8;i++)
     {
         if(flag[i] == 0)
