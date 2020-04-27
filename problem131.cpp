@@ -1,5 +1,5 @@
-// // Codechef April Lunchtime 2020 Div.2 :
-// // Another Birthday Present :
+// Codechef April Lunchtime 2020 Div.2 :
+// Another Birthday Present :
 
 // #include<iostream>
 // using namespace std;

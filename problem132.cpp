@@ -1,4 +1,4 @@
-// SOPJ - ALCATRAZ2 (Go Goa Gone) :
+// SOPJ - ALCATRAZ2 (GO GOA GONE) :
 
 #include<vector>
 #include<iostream>

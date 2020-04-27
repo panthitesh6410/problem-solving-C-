@@ -10,7 +10,7 @@ int main()
     for(int i=1;i<=t;i++)
     {
         int n, s;
-        cin>>n>>s;         // s is already used cost out of 100
+        cin>>n>>s;        // s is already used cost out of 100
         int cost[n];
         for(int j=0;j<n;j++)
             cin>>cost[j];
