@@ -1,5 +1,5 @@
 // WAP that takes an integer and returns nearest palindrome integer
-// by either increment or decrement input
+// by either increment or decrement input value
 
 #include<iostream>
 using namespace std;
