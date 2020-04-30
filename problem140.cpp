@@ -14,7 +14,6 @@ bool not_in_v(vector<char> v, char c)
     }
     return false;
 }
-
 int main()
 {
     string s;
