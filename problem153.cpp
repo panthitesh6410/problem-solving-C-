@@ -11,7 +11,7 @@ int find_binary(int num)
     int i=0;
     while(num != 0)
     {
-        arr[i] = num%10;
+        arr[i] = num%2;
         num = num/2;
         i++;
     }
