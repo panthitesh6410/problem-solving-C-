@@ -1,4 +1,5 @@
 // Google Interview Question :
+// Find median of two given sortd arrays, when treated as a single array
 
 #include<iostream>
 using namespace std;
