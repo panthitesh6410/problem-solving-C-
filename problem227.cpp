@@ -1,22 +1,28 @@
-// nagarro - islands :
+// Hackerrank - Mark and Toys :
 
+#include<algorithm>
 #include<iostream>
 using namespace std;
+
 int main()
 {
-    int t;
-    cin>>t;
-    while(t--)
+    int n;
+    cin>>n;
+    int total;
+    cin>>total;
+    int toys[n];
+    for(int i=0;i<n;i++)
+        cin>>toys[i];
+    int count = 0;
+    sort(toys, toys+n);
+    for(int i=0;i<n;i++)
     {
-        int n, m;
-        cin>>n>>m;
-        int mat[n][m];
-        for(int i=0;i<n;i++)
+        if(toys[i] <= total)
         {
-            for(int j=0;j<m;j++)
-                cin>>mat[i][j];
+            count++;
+            total -= toys[i];
         }
-        
     }
+    cout<<count;
     return 0;
 }
