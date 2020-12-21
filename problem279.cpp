@@ -1,22 +1,25 @@
 // Tech Mahindra question :
  
-// 121 = ABA, AU, LA
-// 12345 = ABCDE, LCDE, 
-// sigle all, then take every two consecutive digits
-
 #include<vector>
 #include<iostream>
 using namespace std;
-enum alps{
-    A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z
-};
 int main()
 {
     int num;
     cin>>num;
-    if(num == 0)
-        cout<<"A";
-    
-    
+    int count = 1;      // for single all (like:12-AB, 123-ABC)
+    vector<int> v;
+    while(num)
+    {
+        v.push_back(num%10);
+        num /= 10;
+    }
+    for(int i=v.size()-1;i>0;i--)
+    {    
+        // 112 -> 2 1 1 -> 11, 12
+        if((v[i]*10 + v[i-1])<=26)
+            count++;
+    }   
+    cout<<count;
     return 0;
 }
