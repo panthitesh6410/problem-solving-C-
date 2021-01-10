@@ -7,7 +7,7 @@ using namespace std;
 
 void spiralPrint(int m, int n, int a[R][C])
 {
-    int i, k = 0, l = 0;3
+    int i, k = 0, l = 0;
 
     /* k - starting row index
         m - ending row index
