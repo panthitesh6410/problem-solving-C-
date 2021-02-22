@@ -10,7 +10,7 @@ class undirectedGraph{
     public:
         undirectedGraph(int nodes){
             no_of_nodes = nodes;
-            adjList = vector<vector<int>>(nodes+1);
+            adjList = vector<vector<int>>(nodes);
         }
         void addEdge(int n1, int n2){
             adjList[n1].push_back(n2);
